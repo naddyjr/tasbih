@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#004242"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="bottom|center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.20">
+
+        <ImageView
+            android:layout_width="313dp"
+            android:layout_height="289dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_count_tasbih" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.42">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:maxHeight="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/animation"
+            app:lottie_loop="true"/>
+        <TextView
+            android:textSize="17dp"
+            android:textColor="#aa9b8e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kusoo dhawaaw"
+            android:fontFamily="@font/biko_regular_400" />
+
+        <TextView
+            android:textSize="26dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Tirso tasbiixda iyo Wardiga"
+            android:fontFamily="@font/kingthings_exeter" />
+        <TextView
+            android:textSize="30dp"
+            android:textColor="#0EDF15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Made by Somnest"
+            android:fontFamily="@font/kingthings_exeter" />
+    </LinearLayout>
+</LinearLayout>
